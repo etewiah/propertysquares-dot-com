@@ -1,0 +1,69 @@
+header.major:after {
+  background: #39c088;
+  content: '';
+  display: inline-block;
+  height: 0.2em;
+  max-width: 20em;
+  width: 75%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+/*.price-list:nth-child(even) {
+  background-color: blue;
+}
+*/
+
+.price-features-list .price-features-text:nth-of-type(2n+1) {
+  background-color: rgba(23, 61, 80, 0.06);
+}
+
+.price-shade {
+  background-color: rgba(23, 61, 80, 0.06);
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-value {
+    font-size: 7em;
+    font-weight: 300;
+  }
+
+  .cd-currency,
+  .cd-duration {
+    color: rgba(23, 61, 80, 0.4);
+  }
+
+  .cd-popular .cd-currency,
+  .cd-popular .cd-duration {
+    color: #e97d68;
+  }
+
+  .cd-secondary-theme .cd-currency,
+  .cd-secondary-theme .cd-duration {
+    color: #2e80a7;
+  }
+
+  .cd-secondary-theme .cd-popular .cd-currency,
+  .cd-secondary-theme .cd-popular .cd-duration {
+    color: #ba6453;
+  }
+
+  .cd-currency {
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .cd-duration {
+    font-size: 1.4em;
+  }
+}
+.cd-pricing-body {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
