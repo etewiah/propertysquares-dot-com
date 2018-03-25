@@ -1,8 +1,7 @@
-
 module.exports = {
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'vue-single-property-webpage',
     meta: [
@@ -22,7 +21,11 @@ module.exports = {
   generate: {
     routes: ['/', '/about', '/fr', '/fr/about']
   },
-  plugins: ['~/plugins/vuetify.js','~/plugins/i18n.js'],
+  plugins: [
+    '~/plugins/vuetify.js',
+    '~/plugins/i18n.js',
+    { src: '~plugins/ga.js', ssr: false }
+  ],
   css: [
     '~/assets/style/app.styl',
     // CSS file in the project
@@ -30,21 +33,21 @@ module.exports = {
     '@/assets/css/banner.css',
   ],
   /*
-  ** Customize the progress bar color
-  */
+   ** Customize the progress bar color
+   */
   loading: { color: '#3B8070' },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     vendor: [
       '~/plugins/vuetify.js'
     ],
     extractCSS: true,
     /*
-    ** Run ESLint on save
-    */
-    extend (config, ctx) {
+     ** Run ESLint on save
+     */
+    extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',

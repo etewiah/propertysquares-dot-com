@@ -1,35 +1,129 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-xs-center">
-        <img src="/v.png" alt="Vuetify.js" class="mb-5" />
+  <v-content>
+    <section id="banner">
+      <div class="content">
+        <header>
+          <h2>PropertyWebBuilder {{ $t('home.title') }}</h2>
+          <p>
+            Open Source and FREE!</p>
+          <p>The smartest way to create
+            <br /> an amazing real estate website.</p>
+        </header>
+        <span class="image"><img src="/imgs/rerenting-landing_framed.png" alt="" /></span>
       </div>
-      <v-card>
-        <v-card-title class="headline">Welcome to the Vuetify + Nuxt.js template 123212</v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>For more information on Vuetify, check out the <a href="https://vuetifyjs.com" target="_blank">documentation</a>.</p>
-          <p>If you have questions, please join the official <a href="https://chat.vuetifyjs.com/" target="_blank" title="chat">discord</a>.</p>
-          <p>Find a bug? Report it on the github <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" title="contribute">issue board</a>.</p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
-          <br>
-          <a href="https://github.com/nuxt/nuxt.js" target="_blank">Nuxt GitHub</a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+      <a href="#one" class="goto-next scrolly">Next</a>
+    </section>
+    <PricingTable></PricingTable>
+    <Features></Features>
+    <section>
+      <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600">
+        <v-layout column align-center justify-center class="white--text">
+          <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
+          <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
+          <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+            Get Started
+          </v-btn>
+        </v-layout>
+      </v-parallax>
+      <v-layout>
+        <v-flex text-xs-center>
+          <blockquote class="blockquote">
+            &#8220;First, solve the problem. Then, write the code.&#8221;
+            <footer>
+              <small>
+            <em>&mdash;John Johnson</em>
+          </small>
+            </footer>
+          </blockquote>
+        </v-flex>
+      </v-layout>
+    </section>
+    <section style="">
+      <v-container grid-list-xl>
+        <v-layout row wrap justify-center class="my-5">
+          <v-flex xs12 sm4>
+            <v-card class="elevation-0 transparent">
+              <v-card-title primary-title class="layout justify-center">
+                <div class="headline">Company info</div>
+              </v-card-title>
+              <v-card-text>
+                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+              </v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex xs12 sm4 offset-sm1>
+            <v-card class="elevation-0 transparent">
+              <v-card-title primary-title class="layout justify-center">
+                <div class="headline">Contact us</div>
+              </v-card-title>
+              <v-card-text>
+                Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
+              </v-card-text>
+              <v-list class="transparent">
+                <v-list-tile>
+                  <v-list-tile-action>
+                    <v-icon class="blue--text text--lighten-2">phone</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>777-867-5309</v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+                <v-list-tile>
+                  <v-list-tile-action>
+                    <v-icon class="blue--text text--lighten-2">place</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>Chicago, US</v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+                <v-list-tile>
+                  <v-list-tile-action>
+                    <v-icon class="blue--text text--lighten-2">email</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </section>
+    <section>
+      <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600">
+        <v-layout column align-center justify-center class="white--text">
+          <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
+          <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
+          <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+            Get Started
+          </v-btn>
+        </v-layout>
+      </v-parallax>
+      <v-layout>
+        <v-flex text-xs-center>
+          <blockquote class="blockquote">
+            &#8220;First, solve the problem. Then, write the code.&#8221;
+            <footer>
+              <small>
+            <em>&mdash;John Johnson</em>
+          </small>
+            </footer>
+          </blockquote>
+        </v-flex>
+      </v-layout>
+    </section>
+  </v-content>
 </template>
 <script>
+import PricingTable from '@/components/PricingTable'
+import Features from '@/components/Features'
+
 export default {
-  layout: 'blog'
+  components: {
+    Features,
+    PricingTable
+  },
+  layout: 'pwb'
 }
 </script>
