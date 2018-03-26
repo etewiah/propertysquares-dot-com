@@ -19,12 +19,8 @@
                 </div>
               </v-card-title>
               <v-card-text>
-                <v-form v-model="formValid" @submit.prevent="onSubmitEnquiry" ref="enqForm" name="contact" action="/" method="post" netlify-honeypot="bot-field" netlify>
-                  <p class="hidden">
-                    <label>Don’t fill this out:
-                      <input name="bot-field">
-                    </label>
-                  </p>
+                <v-form v-model="formValid" ref="enqForm" name="contact" action="" method="post" netlify-honeypot="bot-field" netlify>
+                  <input style="display:none;" name="bot-field">
                   <input type="hidden" name="form-name" value="contact" />
                   <v-layout v-for="(field) in contactUsFields" :key="field.fieldName" row>
                     <v-flex xs12 sm12 offset-sm0>
@@ -49,15 +45,6 @@
                     </template>
                     <v-btn class="primary" type="submit">Send</v-btn>
                   </v-flex>
-                  <label class="form-label" for="email">
-                    Email v2:
-                  </label>
-                  <input class="form-field" name="email" id="email" />
-                  <label class="form-label" for="message">
-                    Message:
-                  </label>
-                  <textarea class="form-field" name="message" id="message"></textarea>
-                  <input class="form-button" type="submit" value="Send message" />
                 </v-form>
               </v-card-text>
             </v-card>
@@ -97,11 +84,11 @@ export default {
           v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
         ]
       }, {
-        //   labelTextTKey: "client.tel",
-        //   fieldName: "tel",
-        //   inputType: "text",
-        //   validationRules: []
-        // }, {
+        labelTextTKey: "client.tel",
+        fieldName: "tel",
+        inputType: "text",
+        validationRules: []
+      }, {
         labelTextTKey: "client.website",
         fieldName: "website",
         inputType: "text",
@@ -140,7 +127,14 @@ export default {
         this.$refs.enqForm.validate()
         // in case nothing has been typed in, above will display error messages
       }
-      // this.$store.dispatch('sendContactMessage', this.enquiryContent)
+
+      var params = new URLSearchParams()
+      params.append('param1', 'value1')
+      params.append('param2', 'value2')
+      axios.post('/foo', params)
+      // if I decided to post via ajax to netlify
+      // would have to url encode like above
+      // TODO - come back to this later
 
       axios.post("/", {
         contact: this.enquiryContent
