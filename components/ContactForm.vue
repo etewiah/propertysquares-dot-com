@@ -19,7 +19,7 @@
                 </div>
               </v-card-title>
               <v-card-text>
-                <v-form v-model="formValid" ref="enqForm"  name="contact" action="" method="post" netlify>
+                <v-form v-model="formValid" ref="enqForm"  name="contact" action="/contactus" method="post" netlify>
                   <input type="hidden" name="form-name" value="contact" />
                   <v-layout v-for="(field) in contactUsFields" :key="field.fieldName" row>
                     <v-flex xs12 sm12 offset-sm0>
@@ -82,11 +82,11 @@ export default {
           v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
         ]
       }, {
-        labelTextTKey: "client.tel",
-        fieldName: "tel",
-        inputType: "text",
-        validationRules: []
-      }, {
+      //   labelTextTKey: "client.tel",
+      //   fieldName: "tel",
+      //   inputType: "text",
+      //   validationRules: []
+      // }, {
         labelTextTKey: "client.website",
         fieldName: "website",
         inputType: "text",
