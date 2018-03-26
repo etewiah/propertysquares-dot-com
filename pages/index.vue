@@ -2,12 +2,12 @@
   <v-content>
     <section id="banner">
       <div class="content">
-        <header>
-          <h2>PropertySquares {{ $t('home.title') }}</h2>
-          <p>
-            Open Source and FREE!</p>
+        <header class="white--text">
+          <h2 class="display-2">PropertySquares</h2>
+          <p class="headline">
+            Beautiful property listings</p>
           <p>The smartest way to create
-            <br /> an amazing real estate website.</p>
+            <br /> an amazing real estate website!</p>
         </header>
         <span class="image"><img src="/imgs/rerenting-landing_framed.png" alt="" /></span>
       </div>
@@ -25,18 +25,6 @@
           </v-btn>
         </v-layout>
       </v-parallax>
-      <v-layout>
-        <v-flex text-xs-center>
-          <blockquote class="blockquote">
-            &#8220;First, solve the problem. Then, write the code.&#8221;
-            <footer>
-              <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-            </footer>
-          </blockquote>
-        </v-flex>
-      </v-layout>
     </section>
     <section style="">
       <v-container grid-list-xl>
@@ -100,18 +88,7 @@
           </v-btn>
         </v-layout>
       </v-parallax>
-      <v-layout>
-        <v-flex text-xs-center>
-          <blockquote class="blockquote">
-            &#8220;First, solve the problem. Then, write the code.&#8221;
-            <footer>
-              <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-            </footer>
-          </blockquote>
-        </v-flex>
-      </v-layout>
+
     </section>
   </v-content>
 </template>
