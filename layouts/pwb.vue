@@ -28,27 +28,59 @@
       <v-content>
         <nuxt />
       </v-content>
+      <v-footer class="" style="background: transparent;" absolute>
+        <v-container fluid class="pa-0" light>
+          <v-card class="" dark flat tile>
+            <v-card-text class="footercolor">
+              <v-layout>
+                <v-flex>
+                  <div class="body-2 subheading">
+                  </div>
+                </v-flex>
+                <v-spacer></v-spacer>
+                <div>
+                </div>
+                <v-spacer></v-spacer>
+                <v-flex>
+                  <div> <span></span>
+                  </div>
+                </v-flex>
+              </v-layout>
+            </v-card-text>
+            <v-card-actions class="">
+              <div class="text-sm-left ml-3">
+                <v-btn  href="https://www.facebook.com/propertywebbuilder"  icon class="mx-3">
+                  <v-icon large color="accent" size="24px"> fa-facebook</v-icon>
+                </v-btn>
+              </div>
+              <v-spacer></v-spacer>
+              <div class="text-sm-right ml-3" style="float:right;">
+                &copy; <strong>PropertySquares</strong>. All rights reserved.
+              </div>
+            </v-card-actions>
+          </v-card>
+        </v-container>
+      </v-footer>
     </v-container>
   </v-app>
 </template>
-
 <script>
-  export default {
-    data () {
-      return {
-        // fluid: true,
-        // clipped: false,
-        // drawer: true,
-        // fixed: false,
-        // items: [
-        //   { icon: 'apps', title: 'Welcome', to: '/' },
-        //   { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-        // ],
-        // miniVariant: false,
-        // right: true,
-        // rightDrawer: false,
-        // title: 'Vuetify.js'
-      }
+export default {
+  data() {
+    return {
+      // fluid: true,
+      // clipped: false,
+      // drawer: true,
+      // fixed: false,
+      // items: [
+      //   { icon: 'apps', title: 'Welcome', to: '/' },
+      //   { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+      // ],
+      // miniVariant: false,
+      // right: true,
+      // rightDrawer: false,
+      // title: 'Vuetify.js'
     }
   }
+}
 </script>

@@ -3,7 +3,7 @@
     <section id="banner">
       <div class="content">
         <header>
-          <h2>PropertyWebBuilder {{ $t('home.title') }}</h2>
+          <h2>PropertySquares {{ $t('home.title') }}</h2>
           <p>
             Open Source and FREE!</p>
           <p>The smartest way to create

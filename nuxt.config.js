@@ -3,15 +3,15 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'vue-single-property-webpage',
+    title: 'PropertySquares',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A webpage to list a property for sale or for rent' }
+      { hid: 'description', name: 'description', content: 'Beautiful multilingual property listing websites' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons', defer: true }
     ]
   },
   router: {
