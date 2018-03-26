@@ -19,7 +19,7 @@
                 </div>
               </v-card-title>
               <v-card-text>
-                <v-form v-model="formValid" ref="enqForm" name="contact" action="/" method="post" netlify-honeypot="bot-field" netlify>
+                <v-form v-model="formValid" @submit.prevent="onSubmitEnquiry" ref="enqForm" name="contact" action="/" method="post" netlify-honeypot="bot-field" netlify>
                   <p class="hidden">
                     <label>Don’t fill this out:
                       <input name="bot-field">
@@ -49,19 +49,15 @@
                     </template>
                     <v-btn class="primary" type="submit">Send</v-btn>
                   </v-flex>
-
-
-        <label class="form-label" for="email">
-          Email:
-        </label>
-        <input class="form-field" name="email" id="email" />
-        <label class="form-label" for="message">
-          Message:
-        </label>
-        <textarea class="form-field" name="message" id="message"></textarea>
-        <input class="form-button" type="submit" value="Send message" />
-
-
+                  <label class="form-label" for="email">
+                    Email v2:
+                  </label>
+                  <input class="form-field" name="email" id="email" />
+                  <label class="form-label" for="message">
+                    Message:
+                  </label>
+                  <textarea class="form-field" name="message" id="message"></textarea>
+                  <input class="form-button" type="submit" value="Send message" />
                 </v-form>
               </v-card-text>
             </v-card>
@@ -72,6 +68,7 @@
   </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
   components: {},
   props: [],
@@ -138,13 +135,32 @@ export default {
   },
   methods: {
     onSubmitEnquiry() {
-      debugger
       // this.enquiryContent.property_id = this.propId
       if (!this.formValid) {
         this.$refs.enqForm.validate()
         // in case nothing has been typed in, above will display error messages
       }
       // this.$store.dispatch('sendContactMessage', this.enquiryContent)
+
+      axios.post("/", {
+        contact: this.enquiryContent
+      }, {
+        // headers: {
+        //   // 'Content-Type': 'application/vnd.api+json',
+        //   // 'Accept': 'application/vnd.api+json'
+        // }
+      }).then(response => {
+        console.log(response)
+        // commit('setPropertyEnquiry', { result: response.data })
+      }, (err) => {
+        let errResult = {
+          errors: [err]
+        }
+        // commit('setPropertyEnquiry', { result: errResult })
+        console.log(err)
+      })
+
+
     }
 
   }

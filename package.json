@@ -15,6 +15,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.8",
     "@fortawesome/fontawesome-free-webfonts": "^1.0.4",
     "@nuxtjs/font-awesome": "^1.0.3",
+    "axios": "^0.18.0",
     "nuxt": "^1.0.0",
     "vue-i18n": "^7.6.0",
     "vuetify": "^1.0.0"
