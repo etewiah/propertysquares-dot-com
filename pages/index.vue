@@ -13,6 +13,7 @@
       </div>
       <a href="#one" class="goto-next scrolly">Next</a>
     </section>
+    <ContactForm></ContactForm>
     <PricingTable></PricingTable>
     <Features></Features>
     <section>
@@ -95,11 +96,13 @@
 <script>
 import PricingTable from '@/components/PricingTable'
 import Features from '@/components/Features'
+import ContactForm from '@/components/ContactForm'
 
 export default {
   components: {
     Features,
-    PricingTable
+    PricingTable,
+    ContactForm
   },
   layout: 'pwb'
 }
