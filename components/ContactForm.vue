@@ -28,7 +28,7 @@
                   <input type="hidden" name="form-name" value="contact" />
                   <v-layout v-for="(field) in contactUsFields" :key="field.fieldName" row>
                     <v-flex xs12 sm12 offset-sm0>
-                      <v-text-field :multi-line="field.multiLine" :required="field.required" :rules="field.validationRules" name="" :label="$t(field.labelTextTKey)" v-model="enquiryContent[field.fieldName]"></v-text-field>
+                      <v-text-field :multi-line="field.multiLine" :required="field.required" :rules="field.validationRules" name="field.fieldName" :label="$t(field.labelTextTKey)" v-model="enquiryContent[field.fieldName]"></v-text-field>
                     </v-flex>
                   </v-layout>
                   <p v-if="contactUsErrors.length">
