@@ -60,21 +60,11 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .slide-in-enter-active {
   transition: all .3s ease;
   transition-delay: 2.0s;
 }
-
-
-
-
-
-
-/*.slide-in-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-*/
 
 .slide-in-enter,
 .slide-in-leave-to {
