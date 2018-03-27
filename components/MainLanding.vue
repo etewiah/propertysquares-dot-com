@@ -9,7 +9,7 @@
               <p v-if="showText" class="headline">
                 Beautiful property listings</p>
             </transition>
-            <transition name="slide-fade">
+            <transition name="slide-in">
               <p v-if="showText">The smartest way to create an amazing real estate website!</p>
             </transition>
           </header>
@@ -34,15 +34,30 @@ export default {
     this.show = true
     var that = this
     setTimeout(function() {
-      debugger
       that.showText = true
-    }, 1000)
+    }, 100)
   }
 }
 </script>
 <style>
+
+.slide-in-enter-active {
+  transition: all .3s ease;
+  transition-delay: 2.0s;
+}
+/*.slide-in-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+*/.slide-in-enter,
+.slide-in-leave-to {
+  transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+}
+
+
 .slide-fade-enter-active {
   transition: all .3s ease;
+  transition-delay: 1s;
 }
 .slide-fade-leave-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
@@ -55,6 +70,7 @@ export default {
   transform: translateX(10px);
   opacity: 0;
 }
+
 @keyframes bounce {
   0% {
     transform: scale(0);
@@ -92,6 +108,8 @@ export default {
 
 
 
+
+
 /* line 961, main.css.scss */
 
 .goto-next:before {
@@ -109,6 +127,8 @@ export default {
   width: 2em;
   z-index: 1;
 }
+
+
 
 
 
