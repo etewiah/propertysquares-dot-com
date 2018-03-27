@@ -1,14 +1,13 @@
 <template>
   <v-app light>
     <v-container fluid class="pa-0">
-      <v-toolbar class="primary" style="height:28px;" primary>
+<!--       <v-toolbar class="primary" style="height:28px;" primary>
         <v-toolbar-items>
         </v-toolbar-items>
         <v-spacer></v-spacer>
-        <!-- <span v-text="title" style="margin-top: -30px;"></span> -->
         <v-spacer></v-spacer>
-      </v-toolbar>
-      <v-toolbar>
+      </v-toolbar> -->
+      <v-toolbar class="primary" primary>
         <v-toolbar-title>PropertyWebBuilder</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>

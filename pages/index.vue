@@ -2,6 +2,7 @@
   <v-content style="padding:0px;">
     <!-- not setting the padding above to 0 will cause a flicker when rendering -->
     <MainLanding></MainLanding>
+    <Features></Features>
     <scroll-view :offset="400">
       <template slot-scope="visibility">
         <RowAnimation :visible="visibility.row" key="row"></RowAnimation>
@@ -12,7 +13,6 @@
     <HalfShade></HalfShade>
     <ContactForm></ContactForm>
     <PricingTable></PricingTable>
-    <Features></Features>
     <section>
       <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600">
         <v-layout column align-center justify-center class="white--text">

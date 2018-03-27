@@ -11,32 +11,32 @@
           </v-flex>
         </v-layout>
         <v-layout wrap class="mt-5 mb-5" row>
-          <v-flex class="mt-5 mb-5" xs4 text-xs-center>
+          <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-globe icon-service</v-icon>
             <h3 class="display-1">Multilingual</h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
-          <v-flex class="mt-5 mb-5" xs4 text-xs-center>
+          <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-mobile icon-service</v-icon>
             <h3 class="display-1">Mobile Friendly</h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
-          <v-flex class="mt-5 mb-5" xs4 text-xs-center>
+          <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-gears icon-service</v-icon>
             <h3 class="display-1">Intuitive Admin Panel</h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
-          <v-flex class="mt-5 mb-5" xs4 text-xs-center>
+          <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-wrench icon-service</v-icon>
             <h3 class="display-1">Easy to customise</h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
-          <v-flex class="mt-5 mb-5" xs4 text-xs-center>
+          <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-map-o icon-service</v-icon>
             <h3 class="display-1">Google maps integration</h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
-          <v-flex class="mt-5 mb-5" xs4 text-xs-center>
+          <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-github icon-service</v-icon>
             <h3 class="display-1">Open Source</h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>

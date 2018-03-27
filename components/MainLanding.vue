@@ -1,12 +1,33 @@
 <template>
   <section id="banner">
-    <div class="content" style="width:100%;">
-      <v-layout style="padding-top: 2%;" wrap>
+    <div class="content" style="padding: 0px;">
+      <v-layout class="hidden-md-and-down" style="padding-top: 12%;" wrap>
+        <v-flex class="pr-5 mt-5 mb-5" xs12 sm12 md6>
+          <header class="white--text">
+            <h2 class="display-2 text-sm-right">PropertySquares</h2>
+            <transition name="slide-fade">
+              <p v-if="showText" class="headline text-sm-right">
+                Beautiful property listings</p>
+            </transition>
+            <transition name="slide-in">
+              <p class="text-sm-right" v-if="showText">The smartest way to create an amazing real estate website!</p>
+            </transition>
+          </header>
+        </v-flex>
+        <v-flex class="mt-5 mb-5" xs12 sm12 md6>
+          <span class="image" style="">
+            <transition name="bounce">
+              <img v-if="show" src="/imgs/rerenting-landing_framed.png" alt="" />
+            </transition>
+          </span>
+        </v-flex>
+      </v-layout>
+      <v-layout class="hidden-lg-and-up" style="padding-top: 2%;" wrap>
         <v-flex class="mt-5 mb-5" xs12 sm12 md6>
           <header class="white--text">
-            <h2 class="display-2">PropertySquares</h2>
+            <h2 class="display-2 text-sm-left">PropertySquares</h2>
             <transition name="slide-fade">
-              <p v-if="showText" class="headline">
+              <p v-if="showText" class="headline  text-sm-left">
                 Beautiful property listings</p>
             </transition>
             <transition name="slide-in">
@@ -14,9 +35,9 @@
             </transition>
           </header>
         </v-flex>
-        <v-flex class="mt-5 mb-5" xs12 sm12 md6>
+        <v-flex class="mt-5 mb-5" align-content-center xs12 sm12 md6>
           <transition name="bounce">
-            <span v-if="show" class="image" style="float: left;"><img src="/imgs/rerenting-landing_framed.png" alt="" /></span>
+            <span v-if="show" class="image" style="height: 49%;width: 100%;"><img src="/imgs/rerenting-landing_framed.png" alt="" /></span>
           </transition>
         </v-flex>
       </v-layout>
@@ -40,18 +61,26 @@ export default {
 }
 </script>
 <style>
-
 .slide-in-enter-active {
   transition: all .3s ease;
   transition-delay: 2.0s;
 }
+
+
+
+
+
+
 /*.slide-in-leave-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-*/.slide-in-enter,
+*/
+
+.slide-in-enter,
 .slide-in-leave-to {
-  transform: translateX(-200%);
-  -webkit-transform: translateX(-200%);
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  opacity: 0;
 }
 
 
@@ -109,7 +138,6 @@ export default {
 
 
 
-
 /* line 961, main.css.scss */
 
 .goto-next:before {
@@ -134,9 +162,6 @@ export default {
 
 
 
-
-
-
 /* Banner */
 
 #banner {
@@ -146,7 +171,7 @@ export default {
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   text-align: center;
   z-index: 21;
@@ -184,7 +209,7 @@ export default {
   max-width: 95%;
   padding: 6em;
   position: relative;
-  text-align: right;
+  /*text-align: right;*/
   vertical-align: middle;
   z-index: 1;
 }
