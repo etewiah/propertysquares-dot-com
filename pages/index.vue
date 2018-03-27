@@ -13,6 +13,13 @@
       </div>
       <a href="#one" class="goto-next scrolly">Next</a>
     </section>
+    <scroll-view :offset="400">
+      <template slot-scope="visibility">
+        <RowAnimation :visible="visibility.row" key="row"></RowAnimation>
+        <ContactForm :visible="visibility.split" key="split"></ContactForm>
+        <HalfShade :visible="visibility.col" key="col"></HalfShade>
+      </template>
+    </scroll-view>
     <HalfShade></HalfShade>
     <ContactForm></ContactForm>
     <PricingTable></PricingTable>
@@ -90,7 +97,6 @@
           </v-btn>
         </v-layout>
       </v-parallax>
-
     </section>
   </v-content>
 </template>
@@ -99,14 +105,24 @@ import PricingTable from '@/components/PricingTable'
 import Features from '@/components/Features'
 import ContactForm from '@/components/ContactForm'
 import HalfShade from '@/components/HalfShade'
+import RowAnimation from '@/components/RowAnimation'
+import 'gsap'
 
 export default {
   components: {
     Features,
     PricingTable,
     ContactForm,
-    HalfShade
+    HalfShade,
+    RowAnimation
   },
+  // data() {
+  //   return {
+  //     visibility: {
+  //       row: false
+  //     }
+  //   }
+  // },
   layout: 'pwb'
 }
 </script>

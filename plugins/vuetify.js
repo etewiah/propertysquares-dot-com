@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 
+import ScrollView from 'vue-scrollview'
+
+Vue.use(ScrollView)
+
 // the component
 // import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 // the library

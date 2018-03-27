@@ -16,8 +16,10 @@
     "@fortawesome/fontawesome-free-webfonts": "^1.0.4",
     "@nuxtjs/font-awesome": "^1.0.3",
     "axios": "^0.18.0",
+    "gsap": "^1.20.4",
     "nuxt": "^1.0.0",
     "vue-i18n": "^7.6.0",
+    "vue-scrollview": "^3.0.1",
     "vuetify": "^1.0.0"
   },
   "devDependencies": {
