@@ -29,9 +29,7 @@ module.exports = {
   css: [
     '~/assets/style/app.styl',
     // CSS file in the project
-    '@/assets/css/extras.css',
-    '@/assets/css/banner.css',
-    '@/assets/css/halfshade.scss',
+
   ],
   /*
    ** Customize the progress bar color

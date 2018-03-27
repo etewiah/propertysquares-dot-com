@@ -17,17 +17,14 @@
         <v-toolbar-items class="hidden-sm-and-down">
         </v-toolbar-items>
       </v-toolbar>
-      <v-expansion-panel>
+<!--       <v-expansion-panel>
         <v-expansion-panel-content>
           <v-card>
             <v-card-text>tttt</v-card-text>
           </v-card>
         </v-expansion-panel-content>
-      </v-expansion-panel>
-      <!-- <ThemeGenerator></ThemeGenerator> -->
-      <v-content>
-        <nuxt />
-      </v-content>
+      </v-expansion-panel> -->
+      <nuxt />
       <v-footer class="" style="background: transparent;" absolute>
         <v-container fluid class="pa-0" light>
           <v-card class="" dark flat tile>

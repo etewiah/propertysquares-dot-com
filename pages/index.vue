@@ -1,18 +1,7 @@
 <template>
-  <v-content>
-    <section id="banner">
-      <div class="content">
-        <header class="white--text">
-          <h2 class="display-2">PropertySquares</h2>
-          <p class="headline">
-            Beautiful property listings</p>
-          <p>The smartest way to create
-            <br /> an amazing real estate website!</p>
-        </header>
-        <span class="image"><img src="/imgs/rerenting-landing_framed.png" alt="" /></span>
-      </div>
-      <a href="#one" class="goto-next scrolly">Next</a>
-    </section>
+  <v-content style="padding:0px;">
+    <!-- not setting the padding above to 0 will cause a flicker when rendering -->
+    <MainLanding></MainLanding>
     <scroll-view :offset="400">
       <template slot-scope="visibility">
         <RowAnimation :visible="visibility.row" key="row"></RowAnimation>
@@ -106,6 +95,7 @@ import Features from '@/components/Features'
 import ContactForm from '@/components/ContactForm'
 import HalfShade from '@/components/HalfShade'
 import RowAnimation from '@/components/RowAnimation'
+import MainLanding from '@/components/MainLanding'
 import 'gsap'
 
 export default {
@@ -114,7 +104,8 @@ export default {
     PricingTable,
     ContactForm,
     HalfShade,
-    RowAnimation
+    RowAnimation,
+    MainLanding
   },
   // data() {
   //   return {
