@@ -11,6 +11,7 @@
       </template>
     </scroll-view>
     <PricingTable></PricingTable>
+    <HalfShadeLeft></HalfShadeLeft>
     <ContactForm></ContactForm>
     <section style="display:none;">
       <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600">
@@ -82,6 +83,7 @@ import PricingTable from '@/components/PricingTable'
 import Features from '@/components/Features'
 import ContactForm from '@/components/ContactForm'
 import HalfShade from '@/components/HalfShade'
+import HalfShadeLeft from '@/components/HalfShadeLeft'
 import RowAnimation from '@/components/RowAnimation'
 import MainLanding from '@/components/MainLanding'
 import 'gsap'
@@ -92,6 +94,7 @@ export default {
     PricingTable,
     ContactForm,
     HalfShade,
+    HalfShadeLeft,
     RowAnimation,
     MainLanding
   },

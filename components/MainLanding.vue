@@ -61,6 +61,32 @@ export default {
 }
 </script>
 <style scoped>
+#banner .content .image {
+  /*edd no longer circular*/
+  /*border-radius: 100%;*/
+  display: inline-block;
+  height: 18em;
+  /*margin-left: 3em;*/
+  vertical-align: middle;
+  width: 28em;
+}
+
+#banner .content .image img {
+  /*border-radius: 100%;*/
+  /*below was for when I used logo as main
+        image compensate for img pos*/
+  /*margin-top: -15px;*/
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  #banner .content .image {
+    height: 18em;
+    width: 44em;
+    margin-left: 3em;
+  }
+}
 .slide-in-enter-active {
   transition: all .3s ease;
   transition-delay: 2.0s;
@@ -128,6 +154,7 @@ export default {
 
 
 
+
 /* line 961, main.css.scss */
 
 .goto-next:before {
@@ -145,6 +172,7 @@ export default {
   width: 2em;
   z-index: 1;
 }
+
 
 
 
@@ -217,24 +245,5 @@ export default {
 #banner .content header p {
   margin: 0.5em 0 0 0;
   top: 0;
-}
-
-#banner .content .image {
-  /*edd no longer circular*/
-  /*border-radius: 100%;*/
-  display: inline-block;
-  height: 18em;
-  /*margin-left: 3em;*/
-  vertical-align: middle;
-  width: 28em;
-}
-
-#banner .content .image img {
-  /*border-radius: 100%;*/
-  /*below was for when I used logo as main
-        image compensate for img pos*/
-  /*margin-top: -15px;*/
-  display: block;
-  width: 100%;
 }
 </style>

@@ -1,6 +1,8 @@
 {
   "pricing": {
-    "basic": "bbb"
+    "basic": "Basic",
+    "popular": "Popular",
+    "premium": "Premium"
   },
   "client": {
     "email": "Email",
