@@ -4,17 +4,14 @@
     <MainLanding></MainLanding>
     <scroll-view :offset="400">
       <template slot-scope="visibility">
+        <Features :visible="visibility.features" key="features" ></Features>
         <!-- <RowAnimation :visible="visibility.row" key="row"></RowAnimation> -->
         <!-- <ContactForm :visible="visibility.split" key="split"></ContactForm> -->
         <HalfShade :visible="visibility.col" key="col"></HalfShade>
       </template>
     </scroll-view>
-    <Features></Features>
-
-    <!--     <HalfShade></HalfShade>
- -->
-    <ContactForm></ContactForm>
     <PricingTable></PricingTable>
+    <ContactForm></ContactForm>
     <section style="display:none;">
       <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600">
         <v-layout column align-center justify-center class="white--text">
@@ -98,13 +95,6 @@ export default {
     RowAnimation,
     MainLanding
   },
-  // data() {
-  //   return {
-  //     visibility: {
-  //       row: false
-  //     }
-  //   }
-  // },
   layout: 'pwb'
 }
 </script>

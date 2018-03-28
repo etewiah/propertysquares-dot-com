@@ -3,7 +3,7 @@
     <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600" style="padding:0px;">
       <v-layout wrap align-center class="white--text">
         <v-flex xs12 sm12 md8>
-          <h1 class="white--text mb-2 display-4 text-xs-center">Make an impression</h1>
+          <h1 class="mb-2 display-4 text-xs-center" style="color:#5480f1;">Generate more leads</h1>
           <div class="subheading mb-3 text-xs-center"></div>
           <v-btn style="display:none;"  class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started

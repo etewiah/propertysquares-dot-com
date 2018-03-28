@@ -7,7 +7,7 @@
   </section>
 </template>
 <script>
- import { TweenMax, Expo, Power2 } from 'gsap'
+import { TweenMax, Expo, Power2 } from 'gsap'
 export default {
   data() {
     return {
