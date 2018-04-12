@@ -12,6 +12,9 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons', defer: true }
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js' }
     ]
   },
   router: {
@@ -47,7 +50,12 @@ module.exports = {
           browsers: ["last 4 versions"]
         }
       }]]
-
+      // presets: [
+      //   ['vue-app', {
+      //     useBuiltIns: true,
+      //     targets: { ie: 9, uglify: true }
+      //   }]
+      // ]
     },
     vendor: [
       '~/plugins/vuetify.js', 'babel-polyfill'
