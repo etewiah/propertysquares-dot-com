@@ -40,9 +40,15 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    // babel: {
-    //   presets: ['es2015', 'stage-0']
-    // },
+    babel: {
+      // presets: ['es2015', 'stage-0']
+      presets: [['vue-app', {
+        targets: {
+          browsers: ["last 4 versions"]
+        }
+      }]]
+
+    },
     vendor: [
       '~/plugins/vuetify.js', 'babel-polyfill'
     ],
