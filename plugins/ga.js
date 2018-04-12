@@ -15,7 +15,10 @@ export default ({ app }) => {
   /*
   ** Set the current page
   */
-  ga('create', 'UA-74873874-1', 'auto')
+  // pwb:
+  // ga('create', 'UA-74873874-1', 'auto')
+  // weebrix
+  ga('create', 'UA-79956630-1', 'auto')
   /*
   ** Every time the route changes (fired on initialization too)
   */

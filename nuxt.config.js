@@ -12,10 +12,10 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons', defer: true }
-    ],
-    script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js' }
     ]
+    // script: [
+    //   { src: 'https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js' }
+    // ]
   },
   router: {
     middleware: 'i18n'
@@ -43,20 +43,20 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    babel: {
-      // presets: ['es2015', 'stage-0']
-      presets: [['vue-app', {
-        targets: {
-          browsers: ["last 4 versions"]
-        }
-      }]]
-      // presets: [
-      //   ['vue-app', {
-      //     useBuiltIns: true,
-      //     targets: { ie: 9, uglify: true }
-      //   }]
-      // ]
-    },
+    // babel: {
+    //   // presets: ['es2015', 'stage-0']
+    //   presets: [['vue-app', {
+    //     targets: {
+    //       browsers: ["last 4 versions"]
+    //     }
+    //   }]]
+    //   // presets: [
+    //   //   ['vue-app', {
+    //   //     useBuiltIns: true,
+    //   //     targets: { ie: 9, uglify: true }
+    //   //   }]
+    //   // ]
+    // },
     vendor: [
       '~/plugins/vuetify.js', 'babel-polyfill'
     ],

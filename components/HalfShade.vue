@@ -2,14 +2,14 @@
   <section class="">
     <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600" style="padding:0px;">
       <v-layout wrap align-center class="white--text">
-        <v-flex xs12 sm12 md8>
+        <v-flex xs12 sm12 md7>
           <h1 class="mb-2 display-4 text-xs-center" style="color:#5480f1;">Generate more leads</h1>
           <div class="subheading mb-3 text-xs-center"></div>
           <v-btn style="display:none;" class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started
           </v-btn>
         </v-flex>
-        <v-flex xs12 sm12 md4>
+        <v-flex xs12 sm12 md5>
           <transition name="slide-in">
             <div v-if="showText" class="spotlight style2 right">
               <div class="content slide-in-content" style="">

@@ -4,13 +4,13 @@
       <v-layout class="hidden-md-and-down" style="padding-top: 12%;" wrap>
         <v-flex class="pr-5 mt-5 mb-5" xs12 sm12 md6>
           <header class="white--text text-sm-left">
-            <h2 class="display-2">{{ $t('whitelabel.name') }}</h2>
+            <h2 class="display-3">{{ $t('whitelabel.name') }}</h2>
             <transition name="slide-fade">
-              <p v-if="showText" class="headline">
+              <p v-if="showText" class="display-1">
                 {{ $t('whitelabel.tagline1') }}</p>
             </transition>
             <transition name="slide-in">
-              <p class="" v-if="showText">{{ $t('whitelabel.tagline2') }}</p>
+              <p class="headline" v-if="showText">{{ $t('whitelabel.tagline2') }}</p>
             </transition>
           </header>
         </v-flex>
