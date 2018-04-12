@@ -4,14 +4,14 @@
     <MainLanding></MainLanding>
     <scroll-view :offset="400">
       <template slot-scope="visibility">
-        <Features :visible="visibility.features" key="features" ></Features>
+        <Features :visible="visibility.features" key="features"></Features>
         <!-- <RowAnimation :visible="visibility.row" key="row"></RowAnimation> -->
         <!-- <ContactForm :visible="visibility.split" key="split"></ContactForm> -->
         <HalfShade :visible="visibility.col" key="col"></HalfShade>
+        <PricingTable></PricingTable>
+        <HalfShadeLeft :visible="visibility.hsl" key="hsl"></HalfShadeLeft>
       </template>
     </scroll-view>
-    <PricingTable></PricingTable>
-    <HalfShadeLeft></HalfShadeLeft>
     <ContactForm></ContactForm>
     <section style="display:none;">
       <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600">

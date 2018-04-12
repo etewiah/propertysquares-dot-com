@@ -5,7 +5,7 @@
         <v-flex xs12 sm12 md8>
           <h1 class="mb-2 display-4 text-xs-center" style="color:#5480f1;">Generate more leads</h1>
           <div class="subheading mb-3 text-xs-center"></div>
-          <v-btn style="display:none;"  class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+          <v-btn style="display:none;" class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started
           </v-btn>
         </v-flex>
@@ -32,13 +32,24 @@
 </template>
 <script>
 export default {
+  props: {
+    visible: {
+      type: Boolean,
+      default: () => false
+    },
+  },
+  watch: {
+    visible(visible) {
+      if (visible && !this.animated) {
+        this.showText = true
+        this.animated = true
+      }
+    }
+  },
   data: () => ({
-    show: false,
-    showText: false
-  }),
-  mounted: function() {
-    this.showText = true
-  }
+    showText: false,
+    animated: false,
+  })
 }
 </script>
 <style scoped>

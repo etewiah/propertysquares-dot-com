@@ -2,16 +2,9 @@
   <section class="">
     <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600" style="padding:0px;">
       <v-layout wrap align-center class="white--text">
-        <v-flex xs12 sm12 md8>
-          <h1 class="mb-2 display-4 text-xs-center" style="color:#5480f1;">Generate more leads</h1>
-          <div class="subheading mb-3 text-xs-center"></div>
-          <v-btn style="display:none;"  class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
-            Get Started
-          </v-btn>
-        </v-flex>
         <v-flex xs12 sm12 md4>
           <transition name="slide-in">
-            <div v-if="showText" class="spotlight style2 right">
+            <div v-if="showText" class="spotlight style2 left">
               <div class="content slide-in-content" style="">
                 <header class="white--text">
                   <transition name="slide-fade">
@@ -26,19 +19,44 @@
             </div>
           </transition>
         </v-flex>
+        <v-flex xs12 sm12 md8>
+          <h1 class="mb-2 display-4 text-xs-center" style="color:#39c088;">Sell more properties</h1>
+          <div class="subheading mb-3 text-xs-center"></div>
+          <v-btn style="display:none;" class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+            Get Started
+          </v-btn>
+        </v-flex>
       </v-layout>
     </v-parallax>
   </section>
 </template>
 <script>
 export default {
+  props: {
+    visible: {
+      type: Boolean,
+      default: () => false
+    },
+  },
+  watch: {
+    visible(visible) {
+      if (visible && !this.animated) {
+        this.showText = true
+        this.animated = true
+      }
+    }
+  },
   data: () => ({
-    show: false,
-    showText: false
-  }),
-  mounted: function() {
-    this.showText = true
-  }
+    showText: false,
+    animated: false,
+  })
+  // data: () => ({
+  //   show: false,
+  //   showText: false
+  // }),
+  // mounted: function() {
+  //   this.showText = true
+  // }
 }
 </script>
 <style scoped>
@@ -49,22 +67,22 @@ export default {
 
 .slide-in-enter,
 .slide-in-leave-to {
-  transform: translateX(+100%);
-  -webkit-transform: translateX(+100%);
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
   opacity: 1;
 }
+
 
 .slide-in-content {
   border-top: 0;
   border-bottom: 0;
-  float: right;
+  float: left;
   height: 600px;
-  margin-right: -2em;
+  margin-left: -2em;
 }
 
 
-.spotlight.left .content,
-.spotlight.right .content {
+.spotlight.left .content {
   /*height: 101%;*/
   padding: 6em 3em;
   top: 0;
@@ -128,15 +146,23 @@ export default {
   border-left-width: 0.35em;
   right: 0;
 }
-.spotlight.style1 .content {
+
+
+/*.spotlight.style1 .content {
   border-color: #39c088;
 }
+*/
+
 .spotlight.style2 .content {
-  border-color: #5480f1;
-}
-.spotlight.style3 .content {
   border-color: #39c088;
 }
+
+
+/*.spotlight.style3 .content {
+  border-color: #39c088;
+}
+*/
+
 .spotlight.inactive .content {
   opacity: 0;
 }

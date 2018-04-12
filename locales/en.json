@@ -4,7 +4,8 @@
     "popular": "Popular",
     "premium": "Premium"
   },
-  "client": {
+  "form": {
+    "submit": "Create my site",
     "email": "Email",
     "name": "Your name",
     "tel": "A contact number we can reach you on",
@@ -13,7 +14,7 @@
   },
   "contact": {
     "title": "Get started for free ",
-    "prompt": "Just fill out the form below to get your own property listings website"
+    "prompt": "Just fill out the form to get your own property listings website"
   },
   "links": {
     "home": "Home",

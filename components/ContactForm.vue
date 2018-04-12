@@ -2,20 +2,18 @@
   <div>
     <v-jumbotron :gradient="gradient" fill-height style="height:100%;" dark>
       <v-container>
-        <v-layout wrap column>
-          <v-flex class="xs-12 mt-5 mb-5" text-xs-center>
+        <v-layout class="mt-5 mb-5" wrap>
+          <v-flex class="mt-5 mb-5" xs12 sm12 md6 text-xs-center>
             <header class="major">
               <h2 class="display-3">{{ $t("contact.title") }}</h2>
               <p class="headline">{{ $t("contact.prompt") }}</p>
             </header>
           </v-flex>
-        </v-layout>
-        <v-layout wrap class="mt-0 mb-5" row>
-          <v-flex class="" xs12 text-xs-center>
+          <v-flex class="mt-5 mb-5" xs12 sm12 md6 text-xs-center>
             <v-card class="elevation-2">
               <v-card-title primary-title class="layout">
                 <div class="headline">
-                  <!-- {{ $t("client.contactUsPrompt") }}: -->
+                  <!-- {{ $t("form.contactUsPrompt") }}: -->
                 </div>
               </v-card-title>
               <v-card-text>
@@ -43,7 +41,7 @@
                     <template v-if="contactUsSending">
                       <v-progress-linear :indeterminate="true"></v-progress-linear>
                     </template>
-                    <v-btn class="primary" type="submit">Send</v-btn>
+                    <v-btn style="width: 50%;" class="primary" type="submit">{{$t('form.submit')}}</v-btn>
                   </v-flex>
                 </v-form>
               </v-card-text>
@@ -67,7 +65,7 @@ export default {
       formValid: false,
       // validationErrors: [],
       contactUsFields: [{
-        labelTextTKey: "client.name",
+        labelTextTKey: "form.name",
         fieldName: "name",
         inputType: "text",
         required: true,
@@ -75,7 +73,7 @@ export default {
           v => !!v || 'Name is required',
         ]
       }, {
-        labelTextTKey: "client.email",
+        labelTextTKey: "form.email",
         fieldName: "email",
         inputType: "text",
         required: true,
@@ -84,17 +82,17 @@ export default {
           v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
         ]
       }, {
-        labelTextTKey: "client.tel",
+        labelTextTKey: "form.tel",
         fieldName: "tel",
         inputType: "text",
         validationRules: []
       }, {
-        labelTextTKey: "client.website",
+        labelTextTKey: "form.website",
         fieldName: "website",
         inputType: "text",
         validationRules: []
       }, {
-        labelTextTKey: "client.message",
+        labelTextTKey: "form.message",
         multiLine: true,
         fieldName: "message",
         inputType: "text",
