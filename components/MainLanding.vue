@@ -3,14 +3,14 @@
     <div class="content" style="padding: 0px;">
       <v-layout class="hidden-md-and-down" style="padding-top: 12%;" wrap>
         <v-flex class="pr-5 mt-5 mb-5" xs12 sm12 md6>
-          <header class="white--text">
-            <h2 class="display-2 text-sm-right">PropertySquares</h2>
+          <header class="white--text text-sm-left">
+            <h2 class="display-2">{{ $t('whitelabel.name') }}</h2>
             <transition name="slide-fade">
-              <p v-if="showText" class="headline text-sm-right">
-                Beautiful property listings</p>
+              <p v-if="showText" class="headline">
+                {{ $t('whitelabel.tagline1') }}</p>
             </transition>
             <transition name="slide-in">
-              <p class="text-sm-right" v-if="showText">The smartest way to create an amazing real estate website!</p>
+              <p class="" v-if="showText">{{ $t('whitelabel.tagline2') }}</p>
             </transition>
           </header>
         </v-flex>
@@ -24,14 +24,14 @@
       </v-layout>
       <v-layout class="hidden-lg-and-up" style="padding-top: 2%;" wrap>
         <v-flex class="mt-5 mb-5" xs12 sm12 md6>
-          <header class="white--text">
-            <h2 class="display-2 text-sm-left">PropertySquares</h2>
+          <header class="white--text text-sm-left">
+            <h2 class="display-2 text-sm-left">{{ $t('whitelabel.name') }}</h2>
             <transition name="slide-fade">
               <p v-if="showText" class="headline  text-sm-left">
-                Beautiful property listings</p>
+                {{ $t('whitelabel.tagline1') }}</p>
             </transition>
             <transition name="slide-in">
-              <p v-if="showText">The smartest way to create an amazing real estate website!</p>
+              <p v-if="showText">{{ $t('whitelabel.tagline2') }}</p>
             </transition>
           </header>
         </v-flex>

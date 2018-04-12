@@ -8,7 +8,7 @@
         <v-spacer></v-spacer>
       </v-toolbar> -->
       <v-toolbar class="primary" primary>
-        <v-toolbar-title>PropertyWebBuilder</v-toolbar-title>
+        <v-toolbar-title>{{ $t('whitelabel.name') }}</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
         <!-- <MainNav :navLinks="displaySettings.top_nav_links"></MainNav> -->
@@ -24,7 +24,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel> -->
       <nuxt />
-      <v-footer class="" style="background: transparent;" absolute>
+      <v-footer class="" style="background: transparent;">
         <v-container fluid class="pa-0" light>
           <v-card class="" dark flat tile>
             <v-card-text class="footercolor">
@@ -45,13 +45,13 @@
             </v-card-text>
             <v-card-actions class="">
               <div class="text-sm-left ml-3">
-                <v-btn  href="https://www.facebook.com/propertywebbuilder"  icon class="mx-3">
+                <v-btn  :href="$t('whitelabel.fbUrl')"  icon class="mx-3">
                   <v-icon large color="accent" size="24px"> fa-facebook</v-icon>
                 </v-btn>
               </div>
               <v-spacer></v-spacer>
               <div class="text-sm-right ml-3" style="float:right;">
-                &copy; <strong>PropertySquares</strong>. All rights reserved.
+                &copy; <strong>{{ $t('whitelabel.name') }}</strong>. All rights reserved.
               </div>
             </v-card-actions>
           </v-card>

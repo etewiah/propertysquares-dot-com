@@ -1,6 +1,12 @@
 {
+  "whitelabel": {
+    "name": "WeeBrix",
+    "fbUrl": "https://www.facebook.com/propertywebbuilder",
+    "tagline1": "Beautiful property listings",
+    "tagline2": "The smartest way to create an amazing real estate website!"
+  },
   "pricing": {
-    "basic": "Basic",
+    "basic": "Standard",
     "popular": "Popular",
     "premium": "Premium"
   },
