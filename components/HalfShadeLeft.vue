@@ -1,6 +1,6 @@
 <template>
   <section class="">
-    <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600" style="padding:0px;">
+    <v-parallax src="/imgs/single-prop.jpg" height="600" style="padding:0px;">
       <v-layout wrap align-center class="white--text">
         <v-flex xs12 sm12 md4>
           <transition name="slide-in">
@@ -20,11 +20,11 @@
           </transition>
         </v-flex>
         <v-flex xs12 sm12 md8>
-          <h1 class="mb-2 display-4 text-xs-center" style="color:#39c088;">Sell more properties</h1>
+<!--           <h1 class="mb-2 display-4 text-xs-center" style="color:#39c088;">Sell more properties</h1>
           <div class="subheading mb-3 text-xs-center"></div>
-          <v-btn style="display:none;" class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+          <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started
-          </v-btn>
+          </v-btn> -->
         </v-flex>
       </v-layout>
     </v-parallax>

@@ -1,6 +1,6 @@
 <template>
   <section class="">
-    <v-parallax src="/imgs/terraced-houses-2.jpeg" height="600" style="padding:0px;">
+    <v-parallax src="/imgs/terraced-houses-larger-low-res.jpeg" height="600" style="padding:0px;">
       <v-layout wrap align-center class="white--text">
         <v-flex xs12 sm12 md7>
           <h1 class="mb-2 display-4 text-xs-center" style="color:#5480f1;">Generate more leads</h1>

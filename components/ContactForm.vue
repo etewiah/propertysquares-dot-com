@@ -4,7 +4,7 @@
       <v-container>
         <v-layout class="mt-5 mb-5" wrap>
           <v-flex class="mt-5 mb-5" xs12 sm12 md6 text-xs-center>
-            <header class="major">
+            <header class="major px-3">
               <h2 class="display-3">{{ $t("contact.title") }}</h2>
               <p class="headline">{{ $t("contact.prompt") }}</p>
             </header>
