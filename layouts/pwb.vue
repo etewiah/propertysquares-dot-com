@@ -31,13 +31,6 @@
           </v-toolbar-items>
         </v-container>
       </v-toolbar>
-      <!--       <v-expansion-panel>
-        <v-expansion-panel-content>
-          <v-card>
-            <v-card-text>tttt</v-card-text>
-          </v-card>
-        </v-expansion-panel-content>
-      </v-expansion-panel> -->
       <nuxt />
       <v-footer class="" style="">
         <v-container style="background-color: #424242;" fluid class="pt-0">
@@ -102,21 +95,9 @@ export default {
   components: {
     LangSwitcher
   },
-  data() {
-    return {
-      // fluid: true,
-      // clipped: false,
-      // drawer: true,
-      // fixed: false,
-      // items: [
-      //   { icon: 'apps', title: 'Welcome', to: '/' },
-      //   { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-      // ],
-      // miniVariant: false,
-      // right: true,
-      // rightDrawer: false,
-      // title: 'Vuetify.js'
-    }
-  }
+  // data() {
+  //   return {
+  //   }
+  // }
 }
 </script>

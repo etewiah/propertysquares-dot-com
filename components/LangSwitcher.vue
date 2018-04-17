@@ -16,7 +16,6 @@ export default {
   },
   computed: {
     expLocales: function() {
-      // let locales = this.$store.state.displaySettings.supported_locales || []
       let locales = ["en", "es"]
       let expLocales = []
       let currentLocale = this.$route.params["lang"]
@@ -26,7 +25,6 @@ export default {
           selected = "selected"
         }
         expLocales.push({
-          // shortLocale: localeAndVar[0],
           variant: locale,
           selected: selected
         })
@@ -40,19 +38,10 @@ export default {
   },
   methods: {
     switchLocale(locale) {
-      // debugger
-      let params = this.$route.params
-      // params["locale"] = locale.shortLocale
-      // doing above and pushing that to the router
-      // would mean from and to in my route watch
-      // would be the same
-
+      // let params = this.$route.params
       let newParams = {
         lang: locale.variant
       }
-      // this.$store.commit('setCurrentLocale', locale.shortLocale)
-      // this.$store.dispatch('loadSettings')
-
       this.$router.replace({ name: this.$route.name, params: newParams })
       // this.$router.push({ name: this.$route.name, params: newParams })
     }

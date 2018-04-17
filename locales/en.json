@@ -1,16 +1,33 @@
 {
-  "whitelabel": {
+  "whitelabel":
+  {
     "name": "WeeBrix",
     "fbUrl": "https://www.facebook.com/propertywebbuilder",
     "tagline1": "Beautiful property listings",
     "tagline2": "The smartest way to create an amazing real estate website!"
   },
-  "pricing": {
+  "features":
+  {
+    "tagline1": "Boost your real estate business with a professional website",
+    "tagline2": "",
+    "multilingual": "Multilingual",
+    "adminPanel": "Intuitive Admin Panel",
+    "mobile": "Mobile Friendly",
+    "search": "Powerful Search Widget",
+    "maps": "Google Maps Integration",
+    "customise": "Easy to customise",
+    "": "",
+    "": "",
+    "": ""
+  },
+  "pricing":
+  {
     "basic": "Standard",
     "popular": "Popular",
     "premium": "Premium"
   },
-  "form": {
+  "form":
+  {
     "submit": "Create my site",
     "email": "Email",
     "name": "Your name",
@@ -18,17 +35,20 @@
     "website": "Your current website (if you have one)",
     "message": "Any other information"
   },
-  "contact": {
+  "contact":
+  {
     "title": "Get started for free ",
     "prompt": "Just fill out the form to get your own property listings website"
   },
-  "links": {
+  "links":
+  {
     "home": "Home",
     "about": "About",
     "english": "English version",
     "french": "French version"
   },
-  "home": {
+  "home":
+  {
     "title": "Welcome",
     "introduction": "This is an introduction in English."
   }

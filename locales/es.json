@@ -1,35 +1,43 @@
 {
-  "whitelabel": {
-    "name": "En espanol WeeBrix",
-    "fbUrl": "En espanol https://www.facebook.com/propertywebbuilder",
-    "tagline1": "En espanol Beautiful property listings",
-    "tagline2": "En espanol The smartest way to create an amazing real estate website!"
+  "whitelabel":
+  {
+    "name": "WeeBrix",
+    "fbUrl": "https://www.facebook.com/propertywebbuilder",
+    "tagline1": "Páginas Web Inmobiliarias de primera calidad",
+    "tagline2": "Una forma intuitiva para gestionar Anuncios Clasificados Inmobiliarios"
   },
-  "pricing": {
-    "basic": "En espanol Standard",
-    "popular": "En espanol Popular",
-    "premium": "En espanol Premium"
+  "features":
+  {
+    "tagline1": "Boost your real estate business with a professional website",
+    "tagline2": "",
+    "tagline1": "Impulse su negocio inmobiliario con un sitio web profesional",
+    "adminPanel": "Intuitive Admin Panel",
+    "multilingual": "Multilingual",
+    "adminPanel": "Intuitive Admin Panel",
+    "mobile": "Mobile Friendly",
+    "search": "Powerful Search Widget",
+    "maps": "Integrado con Google Maps",
+    "customise": "Fácil de personalizar",
+    "": ""
   },
-  "form": {
-    "submit": "En espanol Create my site",
-    "email": "En espanol Email",
-    "name": "En espanol Your name",
-    "tel": "En espanol A contact number we can reach you on",
-    "website": "En espanol Your current website (if you have one)",
-    "message": "En espanol Any other information"
+  "pricing":
+  {
+    "basic": "Standard",
+    "popular": "Popular",
+    "premium": "Premium"
   },
-  "contact": {
-    "title": "En espanol Get started for free ",
-    "prompt": "En espanol Just fill out the form to get your own property listings website"
+  "form":
+  {
+    "submit": "Create my site",
+    "email": "Email",
+    "name": "Your name",
+    "tel": "A contact number we can reach you on",
+    "website": "Your current website (if you have one)",
+    "message": "Any other information"
   },
-  "links": {
-    "home": "En espanol Home",
-    "about": "En espanol About",
-    "english": "En espanol English version",
-    "french": "En espanol French version"
-  },
-  "home": {
-    "title": "En espanol Welcome",
-    "introduction": "En espanol This is an introduction in English."
+  "contact":
+  {
+    "title": "Empieza gratis",
+    "prompt": "Just fill out the form to get your own property listings website"
   }
 }

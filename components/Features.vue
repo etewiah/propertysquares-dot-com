@@ -5,8 +5,12 @@
         <v-layout wrap column>
           <v-flex class="xs-12 mt-5 mb-5" text-xs-center>
             <header class="major">
-              <h2 class="display-3">Finally, a great Open Source solution for realtors</h2>
-              <p class="headline">You no longer have to rely on WordPress or expensive propriety software for your website</p>
+              <h2 class="display-3">
+              {{ $t('features.tagline1') }}
+              </h2>
+              <p class="headline">
+                {{ $t('features.tagline2') }}
+              </p>
             </header>
           </v-flex>
         </v-layout>
@@ -15,36 +19,48 @@
             <transition name="bounce">
               <v-icon v-if="bounceIcon1" x-large class="accent--text icon major">fa fa-globe icon-service</v-icon>
             </transition>
-            <h3 class="display-1">Multilingual</h3>
+            <h3 class="display-1 px-5">
+              {{ $t('features.multilingual') }}
+            </h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
           <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <transition name="bounce2">
               <v-icon v-if="bounceIcon1" x-large class="accent--text icon major">fa fa-mobile icon-service</v-icon>
             </transition>
-            <h3 class="display-1">Mobile Friendly</h3>
+            <h3 class="display-1 px-5">
+              {{ $t('features.mobile') }}
+            </h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
           <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <transition name="bounce3">
               <v-icon v-if="bounceIcon1" x-large class="accent--text icon major">fa fa-gears icon-service</v-icon>
             </transition>
-            <h3 class="display-1">Intuitive Admin Panel</h3>
+            <h3 class="display-1 px-5">
+              {{ $t('features.adminPanel') }}
+            </h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
           <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-wrench icon-service</v-icon>
-            <h3 class="display-1">Easy to customise</h3>
+            <h3 class="display-1 px-5">
+              {{ $t('features.customise') }}
+            </h3>            
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
           <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-map-o icon-service</v-icon>
-            <h3 class="display-1">Google maps integration</h3>
+            <h3 class="display-1 px-5">
+              {{ $t('features.maps') }}
+            </h3>
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
           <v-flex class="mt-5 mb-5" xs12 sm6 md4 text-xs-center>
             <v-icon x-large class="accent--text icon major">fa fa-github icon-service</v-icon>
-            <h3 class="display-1">Open Source</h3>
+            <h3 class="display-1 px-5">
+              {{ $t('features.search') }}
+            </h3>            
             <p style="display: none;">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
           </v-flex>
         </v-layout>
