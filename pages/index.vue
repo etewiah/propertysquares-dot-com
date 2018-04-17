@@ -12,7 +12,7 @@
         <!-- <HalfShadeLeft :visible="visibility.hsl" key="hsl"></HalfShadeLeft> -->
       </template>
     </scroll-view>
-    <ContactForm></ContactForm>
+    <ContactFormHuginn></ContactFormHuginn>
     <section style="display:none;">
       <v-container grid-list-xl>
         <v-layout row wrap justify-center class="my-5">
@@ -70,7 +70,7 @@
 <script>
 import PricingTable from '@/components/PricingTable'
 import Features from '@/components/Features'
-import ContactForm from '@/components/ContactForm'
+import ContactFormHuginn from '@/components/ContactFormHuginn'
 import HalfShade from '@/components/HalfShade'
 import HalfShadeLeft from '@/components/HalfShadeLeft'
 import RowAnimation from '@/components/RowAnimation'
@@ -81,7 +81,7 @@ export default {
   components: {
     Features,
     PricingTable,
-    ContactForm,
+    ContactFormHuginn,
     HalfShade,
     HalfShadeLeft,
     RowAnimation,
