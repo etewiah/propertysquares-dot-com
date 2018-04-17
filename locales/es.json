@@ -1,16 +1,35 @@
 {
+  "whitelabel": {
+    "name": "En espanol WeeBrix",
+    "fbUrl": "En espanol https://www.facebook.com/propertywebbuilder",
+    "tagline1": "En espanol Beautiful property listings",
+    "tagline2": "En espanol The smartest way to create an amazing real estate website!"
+  },
+  "pricing": {
+    "basic": "En espanol Standard",
+    "popular": "En espanol Popular",
+    "premium": "En espanol Premium"
+  },
+  "form": {
+    "submit": "En espanol Create my site",
+    "email": "En espanol Email",
+    "name": "En espanol Your name",
+    "tel": "En espanol A contact number we can reach you on",
+    "website": "En espanol Your current website (if you have one)",
+    "message": "En espanol Any other information"
+  },
+  "contact": {
+    "title": "En espanol Get started for free ",
+    "prompt": "En espanol Just fill out the form to get your own property listings website"
+  },
   "links": {
-    "home": "Home",
-    "about": "About",
-    "english": "English version",
-    "french": "French version"
+    "home": "En espanol Home",
+    "about": "En espanol About",
+    "english": "En espanol English version",
+    "french": "En espanol French version"
   },
   "home": {
-    "title": "Bienvenido",
-    "introduction": "This is an introduction in English."
-  },
-  "about": {
-    "title": "About",
-    "introduction": "This page is made to give you more informations."
+    "title": "En espanol Welcome",
+    "introduction": "En espanol This is an introduction in English."
   }
 }

@@ -7,6 +7,19 @@
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
       </v-toolbar> -->
+
+      <v-toolbar class="primary elevation-0" style="height:28px;" primary>
+        <v-container pt-1 mt-0>
+          <v-toolbar-items>
+            <LangSwitcher></LangSwitcher>
+          </v-toolbar-items>
+          <v-spacer></v-spacer>
+          <!-- <span v-text="title" style="margin-top: -30px;"></span> -->
+          <v-spacer></v-spacer>
+        </v-container>
+      </v-toolbar>
+
+
       <v-toolbar class="primary" style="display:none;" primary>
         <v-container fluid>
           <v-toolbar-title>{{ $t('whitelabel.name') }}</v-toolbar-title>
@@ -83,7 +96,12 @@
   </v-app>
 </template>
 <script>
+import LangSwitcher from '@/components/LangSwitcher'
+
 export default {
+  components: {
+    LangSwitcher
+  },
   data() {
     return {
       // fluid: true,
