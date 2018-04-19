@@ -26,6 +26,25 @@
     "popular": "Popular",
     "premium": "Premium"
   },
+  "func":
+  {
+    "singLang": "Single Language",
+    "emailSupp": "Email Support",
+    "emailAndPhoneSupp": "Email and Phone Support",
+    "multLang": "Multiple Languages",
+    "custDomain": "Custom Domain",
+    "images": "Images",
+    "properties": "Properties",
+    "user": "User",
+    "users": "Users",
+    "": "",
+    "": ""
+  },
+  "halfshade":{
+    "tag1": "Show you mean business",
+    "tag2": "The smartest way to create an amazing real estate website!",
+    "tag3": "Generate more leads"
+  },
   "form":
   {
     "submit": "Create my site",

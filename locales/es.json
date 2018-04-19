@@ -4,7 +4,8 @@
     "name": "WeeBrix",
     "fbUrl": "https://www.facebook.com/propertywebbuilder",
     "tagline1": "Páginas Web Inmobiliarias de primera calidad",
-    "tagline2": "Una forma intuitiva para gestionar Anuncios Clasificados Inmobiliarios"
+    "tagline2": "",
+    "taglineNotUsed": "Una forma intuitiva para gestionar Anuncios Clasificados Inmobiliarios"
   },
   "features":
   {
@@ -26,9 +27,28 @@
     "popular": "Popular",
     "premium": "Premium"
   },
+  "func":
+  {
+    "singLang": "Una Idioma",
+    "emailSupp": "Soporte por email",
+    "emailAndPhoneSupp": "Soporte por teléfono",
+    "multLang": "Multiple Languages",
+    "custDomain": "Propio Dominio",
+    "images": "Images",
+    "properties": "Propiedades",
+    "user": "Usuario",
+    "users": "Usuarios",
+    "": "",
+    "": ""
+  },
+  "halfshade":{
+    "tag1": "MUESTRA TU NEGOCIO…",
+    "tag2": "Todo lo que tu inmobiliaria necesita para vender online!",
+    "tag3": "Vender mas"
+  },
   "form":
   {
-    "submit": "Create my site",
+    "submit": "Crear mi sitio",
     "email": "Email",
     "name": "Your name",
     "tel": "A contact number we can reach you on",
@@ -38,6 +58,6 @@
   "contact":
   {
     "title": "Empieza gratis",
-    "prompt": "Just fill out the form to get your own property listings website"
+    "prompt": "Rellena el formulario para conseguir tu propio pagina web"
   }
 }

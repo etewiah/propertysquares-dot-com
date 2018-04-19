@@ -20,37 +20,37 @@
               <v-divider class=""></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">25</span><span class="italic"> Properties</span> </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">25</span><span class="italic"> {{ $t('func.properties') }}</span> </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">250</span><span class="italic"> Images</span> </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">250</span><span class="italic"> {{ $t('func.images') }}</span> </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">1</span> User </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">1</span> {{ $t('func.user') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Custom Domain </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.custDomain') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Single Language </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.singLang') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Email Support </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.emailSupp') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
             </v-list>
@@ -74,37 +74,37 @@
               <v-divider class=""></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">100</span><span class="italic"> Properties</span> </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">100</span><span class="italic"> {{ $t('func.properties') }}</span> </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">1000</span><span class="italic"> Images</span> </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">1000</span><span class="italic"> {{ $t('func.images') }}</span> </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">5</span> Users </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">5</span> {{ $t('func.users') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Custom Domain </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.custDomain') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Multiple Languages </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.multLang') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Email Support </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.emailSupp') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
             </v-list>
@@ -128,37 +128,37 @@
               <v-divider class=""></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">Unlimited</span><span class="italic"> Properties</span> </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">Unlimited</span><span class="italic"> {{ $t('func.properties') }}</span> </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">Unlimited</span><span class="italic"> Images</span> </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">Unlimited</span><span class="italic"> {{ $t('func.images') }}</span> </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">Unlimited</span> Users </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">Unlimited</span> {{ $t('func.users') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Custom Domain </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.custDomain') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Multiple Languages </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.multLang') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> Email and phone Support </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text"></span> {{ $t('func.emailAndPhoneSupp') }} </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
             </v-list>
