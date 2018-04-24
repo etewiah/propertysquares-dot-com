@@ -3,8 +3,8 @@
   {
     "name": "WeeBrix",
     "fbUrl": "https://www.facebook.com/propertywebbuilder",
-    "tagline1": "Páginas Web para inmobiliarias de primera calidad",
-    "tagline1notused": "<span>Páginas Web para inmobiliarias de primera calidad</span>",
+    "tagline1": "Páginas Web </br> de primera calidad <br> para inmobiliarias",
+    "tagline1notused": "<span>Páginas Web </br> de primera calidad <br> para inmobiliarias </span>",
     "tagline2": "",
     "taglineNotUsed": "Una forma intuitiva para gestionar Anuncios Clasificados Inmobiliarios"
   },

@@ -58,7 +58,8 @@ module.exports = {
     //   // ]
     // },
     vendor: [
-      '~/plugins/vuetify.js', 'babel-polyfill'
+      '~/plugins/vuetify.js'
+      // '~/plugins/vuetify.js', 'babel-polyfill'
     ],
     extractCSS: true,
     /*

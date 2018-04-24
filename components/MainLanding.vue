@@ -2,19 +2,19 @@
   <section id="banner">
     <div class="content" style="padding: 0px;">
       <v-layout class="hidden-md-and-down" style="padding-top: 12%;" wrap>
-        <v-flex class="pr-5 mt-5 mb-5" xs12 sm12 md6>
+        <v-flex class="px-5 mt-5 mb-5" xs12 sm12 md6>
           <header class="white--text text-sm-left">
-            <h2 class="display-4">{{ $t('whitelabel.name') }}</h2>
-            <transition name="slide-fade">
-              <p v-if="showText" class="display-2">
-                {{$t('whitelabel.tagline1')}}
+            <h2 class="display-4" style="font-weight: 600;">{{ $t('whitelabel.name') }}</h2>
+            <div name="slide-fade">
+              <p none="showText" class="display-2">
+                <span v-html="$t('whitelabel.tagline1')"></span>
               </p>
-            </transition>
-            <transition name="slide-in">
-              <p class="headline" v-if="showText">
+            </div>
+            <div name="slide-in">
+              <p class="headline" none="showText">
                 <span v-html="$t('whitelabel.tagline2')"></span>
             </p>
-            </transition>
+            </div>
           </header>
         </v-flex>
         <v-flex class="mt-5 mb-5" xs12 sm12 md6>
