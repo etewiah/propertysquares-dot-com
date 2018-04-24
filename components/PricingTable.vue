@@ -128,7 +128,9 @@
               <v-divider class=""></v-divider>
               <v-list-tile class="price-features-text text-xs-center" @click="">
                 <v-list-tile-content>
-                  <v-list-tile-sub-title class="headline text-xs-center"><span class="black--text">Unlimited</span><span class="italic"> {{ $t('func.properties') }}</span> </v-list-tile-sub-title>
+                  <v-list-tile-sub-title class="headline text-xs-center">
+                    <span v-html="$t('func.unlimitedProps')"></span>
+                     </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>

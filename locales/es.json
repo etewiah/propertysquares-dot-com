@@ -3,7 +3,8 @@
   {
     "name": "WeeBrix",
     "fbUrl": "https://www.facebook.com/propertywebbuilder",
-    "tagline1": "Páginas Web Inmobiliarias de primera calidad",
+    "tagline1": "Páginas Web para inmobiliarias de primera calidad",
+    "tagline1notused": "<span>Páginas Web para inmobiliarias de primera calidad</span>",
     "tagline2": "",
     "taglineNotUsed": "Una forma intuitiva para gestionar Anuncios Clasificados Inmobiliarios"
   },
@@ -14,8 +15,8 @@
     "tagline1": "Impulse su negocio inmobiliario con un sitio web profesional",
     "adminPanel": "Intuitive Admin Panel",
     "multilingual": "Multilingual",
-    "adminPanel": "Intuitive Admin Panel",
-    "mobile": "Mobile Friendly",
+    "adminPanel": "Administracion Intuitivo",
+    "mobile": "Adaptado al móviles",
     "search": "Powerful Search Widget",
     "maps": "Integrado con Google Maps",
     "customise": "Fácil de personalizar",
@@ -38,6 +39,7 @@
     "properties": "Propiedades",
     "user": "Usuario",
     "users": "Usuarios",
+    "unlimitedProps": "<span class='black--text'>Propiedades</span><span class='italic'> Ilimitados</span>",
     "": "",
     "": ""
   },

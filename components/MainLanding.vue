@@ -4,13 +4,16 @@
       <v-layout class="hidden-md-and-down" style="padding-top: 12%;" wrap>
         <v-flex class="pr-5 mt-5 mb-5" xs12 sm12 md6>
           <header class="white--text text-sm-left">
-            <h2 class="display-3">{{ $t('whitelabel.name') }}</h2>
+            <h2 class="display-4">{{ $t('whitelabel.name') }}</h2>
             <transition name="slide-fade">
-              <p v-if="showText" class="display-1">
-                {{ $t('whitelabel.tagline1') }}</p>
+              <p v-if="showText" class="display-2">
+                {{$t('whitelabel.tagline1')}}
+              </p>
             </transition>
             <transition name="slide-in">
-              <p class="headline" v-if="showText">{{ $t('whitelabel.tagline2') }}</p>
+              <p class="headline" v-if="showText">
+                <span v-html="$t('whitelabel.tagline2')"></span>
+            </p>
             </transition>
           </header>
         </v-flex>
@@ -27,8 +30,9 @@
           <header class="white--text text-sm-left">
             <h2 class="display-2 text-sm-left">{{ $t('whitelabel.name') }}</h2>
             <transition name="slide-fade">
-              <p v-if="showText" class="headline  text-sm-left">
-                {{ $t('whitelabel.tagline1') }}</p>
+              <p v-if="showText" class="display-1">
+                <span v-html="$t('whitelabel.tagline1')"></span>
+              </p>
             </transition>
             <transition name="slide-in">
               <p v-if="showText">{{ $t('whitelabel.tagline2') }}</p>
@@ -224,7 +228,9 @@ export default {
 #banner .content {
   display: inline-block;
   margin-right: 1%;
-  max-width: 95%;
+/*  max-width: 95%;
+*/
+  min-width: 100%;
   padding: 6em;
   position: relative;
   /*text-align: right;*/

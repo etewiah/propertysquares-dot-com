@@ -37,7 +37,7 @@
     "properties": "Properties",
     "user": "User",
     "users": "Users",
-    "": "",
+    "unlimitedProps": "<span class='black--text'>Unlimited</span><span class='italic'> Properties</span>",
     "": ""
   },
   "halfshade":{
