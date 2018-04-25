@@ -1,6 +1,6 @@
 <template>
   <section id="vue-pricing-sect">
-    <v-container grid-list-xl>
+    <v-container class="px-0" grid-list-xl>
       <v-layout class="pt-5 pb-5" row wrap align-center>
         <v-flex xs12 md4>
           <v-card hover class="ma-1">
@@ -11,7 +11,7 @@
                   €
                   </span>
                 <span class="cd-value-std">
-                  5
+                  5.90
                   </span>
                 <span class="cd-duration">/ mo</span>
               </div>
@@ -65,7 +65,7 @@
                   €
                   </span>
                 <span class="cd-value">
-                  10
+                  9.90
                   </span>
                 <span class="cd-duration">/ mo</span>
               </div>
@@ -119,7 +119,7 @@
                   €
                   </span>
                 <span class="cd-value-std">
-                  25
+                  25.90
                   </span>
                 <span class="cd-duration">/ mo</span>
               </div>
@@ -130,7 +130,7 @@
                 <v-list-tile-content>
                   <v-list-tile-sub-title class="headline text-xs-center">
                     <span v-html="$t('func.unlimitedProps')"></span>
-                     </v-list-tile-sub-title>
+                  </v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
               <v-divider></v-divider>
@@ -178,6 +178,16 @@
 
 .price-shade {
   background-color: rgba(23, 61, 80, 0.06);
+}
+
+.cd-value-std {
+  font-size: 5em;
+  font-weight: 200;
+}
+
+.cd-value {
+  font-size: 7em;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 768px) {

@@ -3,26 +3,28 @@
     <v-parallax src="/imgs/terraced-houses-larger-low-res.jpeg" height="600" style="padding:0px;">
       <v-layout wrap align-center class="white--text">
         <v-flex xs12 sm12 md7>
-          <h1 class="mb-2 display-4 text-xs-center" style="color:#5480f1;">
-             {{ $t('halfshade.tag3') }}
-          </h1>
-          <div class="subheading mb-3 text-xs-center"></div>
+<!--           <div class="subheading mb-3 text-xs-center"></div>
           <v-btn style="display:none;" class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started
-          </v-btn>
+          </v-btn> -->
         </v-flex>
         <v-flex xs12 sm12 md5>
           <transition name="slide-in">
             <div v-if="showText" class="spotlight style2 right">
               <div class="content slide-in-content" style="">
                 <header class="white--text">
-                  <transition name="slide-fade">
+
+          <h1 class="mb-2 display-4 text-xs-center" style="color:#5480f1;">
+             {{ $t('halfshade.tag3') }}
+          </h1>
+
+<!--                   <transition name="slide-fade">
                     <p v-if="showText" class="display-2 text-sm-right">
                       {{ $t('halfshade.tag1') }}
                       </p>
-                  </transition>
+                  </transition> -->
                   <transition name="slide-in">
-                    <p class="text-sm-right headline" v-if="showText">
+                    <p class="text-sm-center pt-5 headline" v-if="showText">
                       {{ $t('halfshade.tag2') }}
                     </p>
                   </transition>

@@ -55,7 +55,8 @@
     "name": "Your name",
     "tel": "A contact number we can reach you on",
     "website": "Your current website (if you have one)",
-    "message": "Any other information"
+    "message": "Any other information",
+    "successMessage": "Gracias, en breve recibirás detalles de tu nuevo web"
   },
   "contact":
   {

@@ -17,14 +17,15 @@
                 </div>
               </v-card-title>
               <v-card-text>
-                <v-form v-model="formValid" ref="enqForm" name="contact" @submit.prevent="onSubmitEnquiry">
+                <v-form :lazy-validation="true" v-model="formValid" ref="enqForm" name="contact" @submit.prevent="onSubmitEnquiry">
                   <input style="display:none;" name="bot-field">
                   <input type="hidden" name="form-name" value="contact" />
-                  <v-layout v-for="(field) in contactUsFields" :key="field.fieldName" row>
+                  <div v-for="(field) in contactUsFields" :key="field.fieldName" row>
                     <v-flex xs12 sm12 offset-sm0>
-                      <v-text-field :multi-line="field.multiLine" :required="field.required" :rules="field.validationRules" name="field.fieldName" :label="$t(field.labelTextTKey)" v-model="enquiryContent[field.fieldName]"></v-text-field>
+                      <v-text-field :multi-line="field.multiLine" @change="turnOnValidation" :autofocus="field.autofocus" :required="field.required" :rules="emailValidationRules" :ref="field.fieldName" name="field.fieldName" :label="$t(field.labelTextTKey)" v-model="enquiryContent[field.fieldName]"></v-text-field>
                     </v-flex>
-                  </v-layout>
+                    <!-- <v-divider></v-divider> -->
+                  </div>
                   <p v-if="contactUsErrors.length">
                     <template v-for="error in contactUsErrors">
                       <v-alert outline color="error" icon="warning" :value="true">
@@ -32,9 +33,9 @@
                       </v-alert>
                     </template>
                   </p>
-                  <p v-if="contactUsSuccess.length">
+                  <p v-if="contactUsSuccess">
                     <v-alert outline color="success" dismissible v-model="successModel">
-                      {{ contactUsSuccess }}
+                       {{ $t("form.successMessage") }}
                     </v-alert>
                   </p>
                   <v-flex xs12 sm12 offset-sm0>
@@ -57,40 +58,47 @@ import axios from 'axios'
 export default {
   components: {},
   props: [],
+  // mounted() {
+  //   this.$refs.email[0].$el.querySelector("input").focus()
+  // },
   data() {
     return {
       gradient: 'to top, #3878b7, #4696e5',
+      contactUsSuccess: false,
+      contactUsSending: false,
       successModel: true,
       // above only needed so success alert can be dismissed
-      formValid: false,
+      formValid: true,
+      emailValidationRules: [
+        // v => !!v || 'E-mail is required',
+        // v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+      ],
       // validationErrors: [],
       contactUsFields: [{
-        labelTextTKey: "form.name",
-        fieldName: "name",
-        inputType: "text",
-        required: true,
-        validationRules: [
-          // v => !!v || 'Name is required',
-        ]
-      }, {
-        //   labelTextTKey: "form.email",
-        //   fieldName: "email",
+        //   labelTextTKey: "form.name",
+        //   fieldName: "name",
         //   inputType: "text",
         //   required: true,
         //   validationRules: [
-        //     v => !!v || 'E-mail is required',
-        //     v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+        //     // v => !!v || 'Name is required',
         //   ]
         // }, {
-        labelTextTKey: "form.tel",
-        fieldName: "tel",
+        labelTextTKey: "form.email",
+        fieldName: "email",
         inputType: "text",
-        validationRules: []
-      }, {
-        labelTextTKey: "form.website",
-        fieldName: "website",
-        inputType: "text",
-        validationRules: []
+        autofocus: true,
+        required: true,
+        validationRules: [],
+        //   }, {
+        //   labelTextTKey: "form.tel",
+        //   fieldName: "tel",
+        //   inputType: "text",
+        //   validationRules: []
+        // }, {
+        //   labelTextTKey: "form.website",
+        //   fieldName: "website",
+        //   inputType: "text",
+        //   validationRules: []
         // }, {
         //   labelTextTKey: "form.message",
         //   multiLine: true,
@@ -108,19 +116,22 @@ export default {
     }
   },
   computed: {
-    contactUsSending() {
-      return false
-    },
-    contactUsSuccess() {
-      return []
-    },
     contactUsErrors() {
       return []
     },
   },
   methods: {
+    turnOnValidation() {
+      if (this.enquiryContent["email"].length > 0) {
+        this.emailValidationRules = [
+          v => !!v || 'E-mail is required',
+          v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+        ]
+      } else {
+        this.emailValidationRules = []
+      }
+    },
     // submitContactReq() {
-    //   debugger
     //   if (this.$refs.form.validate()) {
     //     // Native form submission is not yet supported
     //     axios.post('', {
@@ -137,7 +148,8 @@ export default {
     onSubmitEnquiry() {
       // this.enquiryContent.property_id = this.propId
       if (!this.formValid) {
-        this.$refs.enqForm.validate()
+        return
+        // this.$refs.enqForm.validate()
         // in case nothing has been typed in, above will display error messages
       }
 
@@ -155,7 +167,7 @@ export default {
 
       // let targetUrl = " http://localhost:3001/users/1/web_requests/9/supersecretstring"
       let targetUrl = "http://huginn-app.relocationportal.com/users/1/web_requests/9/weebrixCt"
-      // debugger
+      this.contactUsSending = true
       axios.post(targetUrl, data, {
         headers: {
           // 'Content-Type': 'text/plain'
@@ -164,14 +176,18 @@ export default {
           // 'Accept': 'application/vnd.api+json'
         }
       }).then(response => {
-        console.log(response)
+        this.contactUsSending = false
+        this.contactUsSuccess = true
+        // console.log(response)
         // commit('setPropertyEnquiry', { result: response.data })
       }, (err) => {
+        this.contactUsSending = false
+        this.contactUsErrors = [err]
         let errResult = {
           errors: [err]
         }
         // commit('setPropertyEnquiry', { result: errResult })
-        console.log(err)
+        // console.log(err)
       })
 
 
@@ -181,4 +197,9 @@ export default {
 }
 </script>
 <style>
+.input-group__details:before {
+  /*without increasing below, input line disappears at some resolutions*/
+  height: 2px;
+  /*https://github.com/vuetifyjs/vuetify/pull/3601*/
+}
 </style>
